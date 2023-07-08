@@ -1,5 +1,5 @@
 package com.rohit.javaapp;
-
+//abstract class
 
 abstract class AbsClass{
 
