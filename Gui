@@ -1,0 +1,78 @@
+What is JFC
+The Java Foundation Classes (JFC) are a set of
+GUI components which simplify the development of desktop applications.
+From Java2
+
+JAVA SWING
+Java Swing is a lightweight Java graphical user interface (GUI) widget toolkit that includes a rich set of 
+widgets. It is part of the Java Foundation Classes (JFC) and includes several packages for developing rich 
+desktop applications in Java. Swing includes built-in controls such as  image, buttons, tabbed panes, 
+sliders, toolbars, color choosers, tables, and text areas to display HTTP or rich text format (RTF).
+Swing components are written entirely in Java and thus are platform-independent.
+
+
+                                                                                                                                                            xxxx
+Swing								vs Applet
+
+Swing is light weight Component.				Applet is heavy weight Component.
+Swing have look and feel according to user 
+view you can change look and feel using UIManager.		Applet Does not provide this facility.
+									
+Swing uses for stand lone Applications, 			Applet need HTML code for Run the Applet.
+Swing have main method to execute the program.	
+Swing uses MVC Model view Controller.				Applet not.
+Swing have its own Layout like most popular Box Layout.		Applet uses AWT Layouts like flowlayout.
+Swing have some Thread rules.					Applet doesn't have any rule.
+To execute Swing no need any browser By which we can 
+create stand alone application But Here we have to add container 
+and maintain all action control with in frame container.	To execute Applet programe we should need any 
+								one browser like Appletviewer, web browser. 
+							Because Applet using browser container to run and all 
+							action control with in browser container.
+
+
+
+
+
+
+
+Creating a new Project swing project
+
+way1: without IDE(not preferred) //because many compenents and event class not easy to memorize all
+step1: Create java frame
+Tow ways to create a frame:
+By creating the object of Frame class (association)
+By extending Frame class (inheritance)
+step2:
+write swing coding inside the main(), constructor or any other method.
+example1/2/3:
+
+way2: with using netbeans/eclipse IDE(preferred)
+Creating a new Form
+To create a new application project called "MyGUI":
+1. Choose File > New Project. Alternately, click the New Project icon in the
+toolbar.
+2. From the Categories pane select Java and in the Projects pane, choose Java
+Application. Click Next.
+3. Enter a name (in this case MyGUI) in the Project Name field and specify the
+project location by clicking on the Browse button. By default the project is
+saved in the NetBeansProjects folder in My Documents and so this is the
+default Project location displayed in this field.
+4. Ensure that the Set as Main Project checkbox is selected and clear the Create
+Main Class field.
+5. Click Finish
+
+
+
+
+
+
+
+
+private void sumBtnActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        double x1=Double.parseDouble(inputTxt1.getText());
+        
+        double x2=Double.parseDouble(inputTxt2.getText());
+        JOptionPane.showMessageDialog(this, "Sum="+(x1+x2));
+    }
